@@ -22,6 +22,11 @@ class PersonsModule extends AbstractModule {
   /**
    * Another way of binding, see
    * http://code.google.com/p/google-guice/wiki/ProvidesMethods
+   * We can create object, update needed information and
+   * return such defined object.
+   *
+   * Without @Named Guice would return this String for every String parameter,
+   * within given module.
    */
   @Provides
   @Named("surname")
