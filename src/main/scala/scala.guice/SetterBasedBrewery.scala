@@ -1,5 +1,6 @@
 package scala.guice
 
+import aop.InterceptMe
 import interfaces.{Hops, Water, Malt}
 import javax.inject.Inject
 
@@ -29,6 +30,7 @@ class SetterBasedBrewery {
     this.malt = Some(malt)
   }
 
+  @InterceptMe
   @Inject
   def setWater(water: Water) {
     this.water = water

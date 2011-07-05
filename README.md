@@ -11,9 +11,8 @@ I covered few examples of Guice here:
 * auto creation of Factory class through @Assisted inject
 * @Singleton annotation
 * @Names annotation
+* AOP with annotation
 
 Still to cover:
 
-* define and use own annotation
 * define custom scope
-* intercept method
